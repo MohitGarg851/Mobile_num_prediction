@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+	<!-- <link rel="stylesheet" type="text/css" href="../static/styles.css"> -->
+	<! -- <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='static/styles.css') }}"> -->
+    <link rel="stylesheet" href="static/styles.css">
+</head>
+<body>
+
+	<header>
+		<div class="container">
+		<div id="brandname">
+		<h1 style= "text-align:center;" >Mobile number recognition </h1>
+		</div>
+		<h2 style= "text-align:center;" >Machine Learning App with Flask</h2>
+        
+	</div>
+	</header>
+
+	<div class="ml-container">
+    
+
+		<form action="{{ url_for('predict')}}" method="POST">
+		<p><h3 style= "text-align:center;" >Add location of mobile number image here</h3></p>
+		<!-- <input type="text" name="comment"/> -->
+		<textarea name="message" rows="4" cols="50"></textarea>
+		<br/>
+        <div style="text-align:center">  
+		<input type="submit" class="btn-info" align="center" value="predict">
+		</div>
+	</form>
+		
+	</div>
+
+	
+	
+
+</body>
+</html>

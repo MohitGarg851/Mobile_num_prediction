@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+    <! -- <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}"> -->
+    <link rel="stylesheet" href="static/styles.css">
+</head>
+<body>
+
+	<header>
+		<div class="container">
+		<div id="brandname">
+			ML App
+		</div>
+		<h2>Scanned number is</h2>
+
+        <img src="{{ user_image }}" alt="User Image", style="width:900px;height:600px;" , align ="right">
+		
+	</div>
+	</header>
+	
+	<div class="results" >
+   
+
+   <h1 style= "text-align:left" >Number:</h1>
+   <p><h1 style= "text-align:left;" > {{ prediction }}</h1></p>
+   
+   <button type="button" onclick="alert('your number saved succesfully!')">Add to contacts</button>
+
+   <button type="button" onclick="alert('Dialling')">Dial</button>
+
+	</div>
+
+</body>
+</html>
